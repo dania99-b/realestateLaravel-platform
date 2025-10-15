@@ -10,8 +10,7 @@ class ListingController extends Controller
     public function index()
     {
         $listings = Listing::all();
-
-        // أضف حقل source لكل عنصر
+        
         $listings = $listings->map(function ($listing) {
             return [
                 'id' => $listing->id,
