@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Listing extends Model
 {
-    protected $table = 'listing'; // اسم الجدول في MySQL
-
+    protected $table = 'listing'; 
     use HasFactory;
 }
